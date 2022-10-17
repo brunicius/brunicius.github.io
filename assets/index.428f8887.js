@@ -85,7 +85,7 @@ Error generating stack: `+o.message+`
   justify-content: center;
   align-items: center;
   padding: 15px 0;
-`,g2=()=>M(m2,{children:M(v2,{children:M(h2,{})})}),y2="/assets/profile.dff02e18.jpg",w2=be.div`
+`,g2=()=>M(m2,{children:M(v2,{children:M(h2,{})})}),y2="https://www.gravatar.com/avatar/12ad1eb4b5857717ac8801f9f62b9527?s=200",w2=be.div`
   display: flex;
   justify-content: space-between;
   align-items: center;  
