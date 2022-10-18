@@ -50,10 +50,7 @@ export const CardHeader = () => {
 
   return (
     <CHWrapper>
-      <PhotoWrapper
-        onClick={() => {
-          setIsLoaded(!isLoaded);
-        }}
+      <PhotoWrapper        
         onLoad={onImageLoad}
         style={{
           ...(isLoaded && { opacity: "1" }),
