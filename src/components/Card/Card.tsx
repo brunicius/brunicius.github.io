@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const CardWrapper = styled.div`
   width: 100%;
   max-width: 800px;
-  margin: 60px auto;
+  margin: 45px auto 15px;
   transition: height 0.4s ease;
 `;
 
