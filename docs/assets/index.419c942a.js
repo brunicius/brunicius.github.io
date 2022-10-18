@@ -58,7 +58,7 @@ Error generating stack: `+o.message+`
  */var o2=$e.exports,l2=Symbol.for("react.element"),u2=Symbol.for("react.fragment"),s2=Object.prototype.hasOwnProperty,a2=o2.__SECRET_INTERNALS_DO_NOT_USE_OR_YOU_WILL_BE_FIRED.ReactCurrentOwner,c2={key:!0,ref:!0,__self:!0,__source:!0};function z1(e,t,n){var r,i={},o=null,l=null;n!==void 0&&(o=""+n),t.key!==void 0&&(o=""+t.key),t.ref!==void 0&&(l=t.ref);for(r in t)s2.call(t,r)&&!c2.hasOwnProperty(r)&&(i[r]=t[r]);if(e&&e.defaultProps)for(r in t=e.defaultProps,t)i[r]===void 0&&(i[r]=t[r]);return{$$typeof:l2,type:e,key:o,ref:l,props:i,_owner:a2.current}}Vo.Fragment=u2;Vo.jsx=z1;Vo.jsxs=z1;(function(e){e.exports=Vo})(Bo);const Ga=Bo.exports.Fragment,M=Bo.exports.jsx,Ye=Bo.exports.jsxs,f2=be.div`
   width: 100%;
   max-width: 800px;
-  margin: 60px auto;
+  margin: 45px auto 15px;
   transition: height 0.4s ease;
 `,d2=be.div`
   margin: auto 15px;
