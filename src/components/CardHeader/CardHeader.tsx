@@ -20,7 +20,7 @@ const PhotoWrapper = styled.img`
   aspect-radius: 1/1;
   width: 240px;
   flex: 1;
-  transition: all ease 0.4s;
+  transition: all ease 2s;
 `;
 
 const TitleWrapper = styled.div`
@@ -50,7 +50,7 @@ export const CardHeader = () => {
 
   return (
     <CHWrapper>
-      <PhotoWrapper        
+      <PhotoWrapper
         onLoad={onImageLoad}
         style={{
           ...(isLoaded && { opacity: "1" }),
