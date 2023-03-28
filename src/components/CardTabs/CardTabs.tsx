@@ -24,7 +24,7 @@ import { useEffect, useRef, useState } from "react";
 import autoAnimate from "@formkit/auto-animate";
 
 const CTWrapper = styled.div`
-  margin-top: 30px;
+  margin-top: 15px;
 `;
 
 const ControlsWrapper = styled.div`
@@ -45,9 +45,10 @@ const ControlButtonWrapper = styled.div`
   transition: background-color ease 0.4s;
   cursor: pointer;
   background-color: transparent;
-  ${(props) => (props["aria-current"]
-  ? "background-color: #444;"
-  : "background-color: transparent;")}
+  ${(props) =>
+    props["aria-current"]
+      ? "background-color: #444;"
+      : "background-color: transparent;"}
 
   &:hover {
     background-color: #444;
@@ -199,10 +200,6 @@ export const CardTabs = () => {
       icon: <SiGithub size='32' />,
       name: "GitHub",
     },
-    {
-      icon: <BiCoffee size='32' />,
-      name: "Beber café",
-    },
   ];
 
   const social: ItemProps[] = [
@@ -243,17 +240,26 @@ export const CardTabs = () => {
       <ControlsWrapper>
         <ControlButton
           icon={<IoPersonCircleSharp size='24' />}
-          onClick={(index) => setActiveTab(index)}
+          onClick={(index) => {
+            if (index === activeTab) setActiveTab(null);
+            else setActiveTab(index);
+          }}
           index={1}
         />
         <ControlButton
           icon={<MdCode size='24' />}
-          onClick={(index) => setActiveTab(index)}
+          onClick={(index) => {
+            if (index === activeTab) setActiveTab(null);
+            else setActiveTab(index);
+          }}
           index={2}
         />
         <ControlButton
           icon={<RiMessage2Fill size='24' />}
-          onClick={(index) => setActiveTab(index)}
+          onClick={(index) => {
+            if (index === activeTab) setActiveTab(null);
+            else setActiveTab(index);
+          }}
           index={3}
         />
       </ControlsWrapper>
@@ -263,12 +269,20 @@ export const CardTabs = () => {
             Olá, meu nome é Bruno Vinicius, ou{" "}
             <span style={{ color: "#1E91D6" }}>brunicius</span>.
           </h1>
-          <p style={{ marginTop: "15px", fontWeight: "lighter" }}>
-            Sou um entusiasta na área da Tecnologia da Informação, com ênfase em
+          <p
+            style={{
+              marginTop: "3px",
+              fontWeight: "lighter",
+              textIndent: "5px",
+            }}
+          >
+            Sou um entusiasta da área de Tecnologia da Informação, com ênfase em
             Análise e Desenvolvimento de Software e Lógica de Programação.
-            Atualmente cursando Ensino Médio com Técnico em Informática
-            integrado no Instituto Federal do Sertão Pernambucano (PE) - Campus
-            Petrolina.
+            Atualmente, trabalho como Desenvolvedor Fullstack Júnior na C2Byte,
+            onde desenvolvo softwares utilizando tecnologias como React, Node.JS
+            e Python. Estou sempre em busca de aprimorar minhas habilidades e
+            conhecimentos na área, com o objetivo de contribuir cada vez mais
+            para o sucesso dos projetos nos quais estou envolvido.
           </p>
         </TabWrapper>
         <TabWrapper index={2} title='Habilidades'>

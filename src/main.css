@@ -14,8 +14,48 @@ html {
 }
 
 body {
-  background-color: #191b1c;
+  background: linear-gradient(270deg, #010006, #031926);
+  background-size: 400% 400%;
+
+  -webkit-animation: backgroundAnimation 10s ease infinite;
+  -moz-animation: backgroundAnimation 10s ease infinite;
+  animation: backgroundAnimation 10s ease infinite;
+
   color: #f6f6f6;
+}
+
+@-webkit-keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@-moz-keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+@keyframes backgroundAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 img {

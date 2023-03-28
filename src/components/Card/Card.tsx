@@ -3,8 +3,23 @@ import styled, { keyframes } from "styled-components";
 const CardWrapper = styled.div`
   width: 100%;
   max-width: 800px;
-  margin: 45px auto 15px;
+  margin: 10px auto 15px;
   transition: height 0.4s ease;
+`;
+
+const boxShadowAnimation = keyframes`
+  0% {
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
+    box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
+  }
+  50% {
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.05);
+    box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.05);
+  }
+  100% {
+    -webkit-box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
+    box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
+  }
 `;
 
 const CardInner = styled.div`
@@ -15,9 +30,9 @@ const CardInner = styled.div`
   border-radius: 15px;
   backdrop-filter: blur(2px);
 
-  box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px,
-    rgba(6, 24, 44, 0.65) 0px 4px 6px -1px,
-    rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+  animation-name: ${boxShadowAnimation};
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
 
   -webkit-box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
   box-shadow: 0px 0px 14px 5px rgba(30, 145, 214, 0.2);
