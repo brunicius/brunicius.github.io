@@ -214,11 +214,6 @@ export const CardTabs = () => {
       navigate: "https://github.com/brunicius",
     },
     {
-      icon: <FaTwitterSquare size='32' />,
-      name: "Twitter",
-      navigate: "https://twitter.com/brunicius_",
-    },
-    {
       icon: <FaInstagramSquare size='32' />,
       name: "Instagram",
       navigate: "https://www.instagram.com/o.brunicius/",
