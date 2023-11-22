@@ -214,19 +214,9 @@ export const CardTabs = () => {
       navigate: "https://github.com/brunicius",
     },
     {
-      icon: <FaInstagramSquare size='32' />,
-      name: "Instagram",
-      navigate: "https://www.instagram.com/o.brunicius/",
-    },
-    {
       icon: <ImMail size='32' />,
       name: "E-Mail",
       navigate: "mailto:vruno.binicius@gmail.com",
-    },
-    {
-      icon: <FaWhatsappSquare size='32' />,
-      name: "WhatsApp",
-      navigate: "https://api.whatsapp.com/send?phone=5587981615939",
     },
   ];
 
